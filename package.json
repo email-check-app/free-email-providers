@@ -1,6 +1,7 @@
 {
-  "name": "@devmehq/free-email-providers",
+  "name": "@emailcheck/free-email-providers",
   "version": "1.0.0",
+  "private": false,
   "description": "A list of free email providers in JSON format",
   "keywords": [
     "email",
@@ -9,9 +10,9 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/devmehq/free-email-providers"
+    "url": "https://github.com/email-check-app/free-email-providers"
   },
   "license": "MIT",
-  "author": "DEV.ME <support@dev.me> (https://dev.me)",
-  "dependencies": {}
+  "author": "EMAIL-CHECK.APP <support@email-check.app> (https://email-check.app)",
+  "packageManager": "yarn@1.22.22"
 }
