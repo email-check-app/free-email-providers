@@ -20,7 +20,7 @@
 
 ## Available Formats
 ### JSON Format
-The `free-email-providers.json` file contains an array of domain strings.
+The `free-email-providers.json` file contains an array of domain strings with 96,748 entries.
 
 **Usage Example:**
 ```javascript
@@ -28,8 +28,8 @@ const providers = require('./free-email-providers.json');
 console.log(`Total domains: ${providers.length}`);
 ```
 
-### Text Format
-The `list.txt` file contains one domain per line.
+### Source Data
+The project maintains source data that gets processed into the final JSON format through an automated build script that handles deduplication and sorting.
 
 ## Quick Start
 ### Node.js
@@ -108,8 +108,9 @@ app.post('/register', (req, res) => {
 * **Daily Monitoring**: Automated checks for provider availability
 * **Monthly Updates**: Manual review and new provider additions
 * **Community Contributions**: Pull requests reviewed and merged
-* **Quality Assurance**: Duplicate removal and domain validation
+* **Quality Assurance**: Automated duplicate removal and domain validation
 * **Source Aggregation**: Multiple reputable sources combined
+* **Build Process**: Automated script processes and consolidates data from multiple sources
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
@@ -117,16 +118,17 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Contributing
 1. Fork the repository
 2. Create a feature branch
-3. Add your changes to `list.txt` (preferred) or `free-email-providers.json`
-4. Run `node ts.js` to build and deduplicate
+3. Add your changes to the source files
+4. Run the build script to process and deduplicate the data
 5. Submit a pull request with a clear description
 
 ## Important Notes
 * **Active Providers Only**: List contains only currently active free email services
 * **Regular Updates**: Providers are verified monthly for availability
 * **Comprehensive Coverage**: Includes webmail, temporary, and regional providers
-* **Deduplicated**: All entries are unique and sorted alphabetically
+* **Automated Processing**: All entries are deduplicated and sorted alphabetically via build script
 * **Performance Optimized**: JSON format for efficient parsing and lookup
+* **Quality Assured**: Multi-source aggregation with automated validation
 
 ## Related Projects
 * **[email-validator-js](https://github.com/email-check-app/email-validator-js/)** - JavaScript email validation library using this provider list
@@ -136,11 +138,10 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 ## Support
 * **Issues**: [Create an issue](https://github.com/email-check-app/free-email-providers/issues) for bugs or requests
 * **Discussions**: [Join discussions](https://github.com/email-check-app/free-email-providers/discussions) for questions
-* **Email**: support@dev.me
-* **Website**: [dev.me](https://dev.me)
+* **Website**: [Email Check App](https://email-check.app)
 
 ---
 
-**Made with ❤️ by [DEV.ME](https://dev.me)**
+**Made with ❤️ by [Email Check App](https://email-check.app)**
 
 If you find this useful, please give us a ⭐ on GitHub!
